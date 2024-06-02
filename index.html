@@ -1,2 +1,139 @@
-Hello World
-its a great day
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Portfolio" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/fa62c117c7.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="styles.css" />
+  <title>Luke Hopkirk</title>
+</head>
+
+<body class="light" id="top">
+  <header class="header center">
+    <h3>
+      <a href="#" class="link">LH.</a>
+    </h3>
+
+    <nav class="nav center">
+      <ul class="nav__list center">
+        <li class="nav__list-item">
+          <a class="link link--nav" href="#projects">Projects</a>
+        </li>
+        <li class="nav__list-item">
+          <a class="link link--nav" href="#skills">Skills</a>
+        </li>
+        <li class="nav__list-item">
+          <a class="link link--nav" href="#contact">Contact</a>
+        </li>
+      </ul>
+
+      <button type="button" aria-label="toggle theme" class="btn btn--icon">
+        <i aria-hidden="true" id="btn-theme" class="fas fa-moon"></i>
+      </button>
+
+      <button type="button" aria-label="toggle navigation" class="btn btn--icon nav__hamburger">
+        <i aria-hidden="true" class="fas fa-bars"></i>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- About -->
+    <div class="about center">
+      <h1><span class="about__name">Luke Hopkirk</span></h1>
+      <h2 class="about__role">Computer Science Student.</h2>
+      <p class="about__desc">
+        I have studied at the University of Otago for the past two years to further my knowledge in computer science.
+        While studying, group projects have helped me gain experience working as a team to complete various tasks.
+        During
+        these projects, we encountered many real-world issues, such as team members leaving mid-project without
+        replacements and adhering to strict deadlines to ensure timely releases.
+      </p>
+
+      <div class="about__contact center">
+        <a href="Luke-Hopkirk-CV.pdf" target="_blank">
+          <span class="btn btn--outline">Resume</span>
+        </a>
+
+        <a href="https://nz.linkedin.com/in/luke-hopkirk-287267170" aria-label="linkedin" class="link link--icon"
+          target="_blank">
+          <i aria-hidden="true" class="fab fa-linkedin"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- Projects -->
+    <section id="projects" class="section projects">
+      <h2 class="section__title">Projects</h2>
+
+      <div class="projects__grid">
+        <div class="project">
+          <h3>A.N.D.I.E</h3>
+          <p class="project__description">
+            A.N.D.I.E was an image editor project where, as a group, we had to add features to an existing image editor
+            provided to us. We made various additions, including language support, image resizing and cropping, image
+            rotation, undo and redo functionality, keyboard shortcuts, and more.
+          </p>
+          <ul class="project__stack">
+            <li class="project__stack-item">Java</li>
+            <li class="project__stack-item">JUnit</li>
+          </ul>
+        </div>
+
+        <div class="project">
+          <h3>Dungeon Rage</h3>
+          <p class="project__description">
+            Dungeon Rage was a 2D dungeon crawler game developed by four of us during a 6-week summer school course. It
+            was
+            our first time using Unity, and developing a game while learning Unity was a good challenge that ended up
+            being
+            very rewarding.
+          </p>
+          <ul class="project__stack">
+            <li class="project__stack-item">Unity</li>
+            <li class="project__stack-item">C#</li>
+            <li class="project__stack-item">Game Development</li>
+          </ul>
+          <a href="https://cosc360.otago.ac.nz/games/2024/DungeonRage" aria-label="live preview" class="link link--icon"
+            target="_blank">
+            <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="section skills" id="skills">
+      <h2 class="section__title">Skills</h2>
+      <ul class="skills__list">
+        <li class="skills__list-item btn btn--plain">Java</li>
+        <li class="skills__list-item btn btn--plain">Python (Pandas, NumPy, scikit-learn, Matplotlib, Seaborn)</li>
+        <li class="skills__list-item btn btn--plain">R Studio</li>
+        <li class="skills__list-item btn btn--plain">SQL (MySQL, PostgreSQL, MariaDB)</li>
+        <li class="skills__list-item btn btn--plain">C</li>
+        <li class="skills__list-item btn btn--plain">JavaScript</li>
+        <li class="skills__list-item btn btn--plain">HTML/CSS</li>
+        <li class="skills__list-item btn btn--plain">Node.js</li>
+        <li class="skills__list-item btn btn--plain">Docker</li>
+        <li class="skills__list-item btn btn--plain">React</li>
+        <li class="skills__list-item btn btn--plain">JUnit</li>
+        <li class="skills__list-item btn btn--plain">Bash</li>
+        <li class="skills__list-item btn btn--plain">Unity</li>
+        <li class="skills__list-item btn btn--plain">Gitlab</li>
+        <li class="skills__list-item btn btn--plain">Github</li>
+      </ul>
+    </section>
+
+    <!-- Contact -->
+    <section class="section contact center" id="contact">
+      <h2 class="section__title">Contact</h2>
+      <a href="mailto:hopkirkluke@gmail.com">
+        <span class="btn btn--outline">Email me</span>
+      </a>
+      <p>Phone: +64 028 405 1296</p>
+    </section>
